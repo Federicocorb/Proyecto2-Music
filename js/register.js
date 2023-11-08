@@ -6,9 +6,7 @@ const registerUser = () => {
     const confirmPassword = document.getElementById('inputConfirmPassword').value;
 
     if(password !== confirmPassword){
-        const form = document.getElementById('form');
-        const warningMessage = document.createElement('h3');
-        warningMessage.textContent = 'Las contraseñas no coinciden'
+        alert('Las contraseñas no coinciden')
     }else{
         fetch('http://localhost:3000/users',{
             method: 'POST',
@@ -25,6 +23,4 @@ const registerUser = () => {
         })
         window.location.href = "../index.html"
     }
-    form.appendChild(warningMessage);
-
 }
