@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "fede",
+      "email": "fede@gmail.com",
+      "userName": "asd",
+      "password": "asd",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "name": "Tere",
+      "email": "tere@gmail.com",
+      "userName": "Teresa",
+      "password": "teresa",
+      "role": "client",
+      "id": 2
+    },
+    {
+      "name": "fede",
+      "email": "fedeedede@gmail.com",
+      "userName": "fede",
+      "password": "federico",
+      "role": "client",
+      "id": 3
+    }
+  ]
+}
