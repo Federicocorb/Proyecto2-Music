@@ -22,7 +22,7 @@ const usuariosAdm = async () => {
     const tableBody = document.getElementById('tableBody');
 
     const usuario = usuarios.map(user => {
-        `<tr>
+       return `<tr>
             <th scope="row">${user.id}</th>
             <td>${user.userName}</td>
             <td>${user.email}</td>
@@ -30,8 +30,9 @@ const usuariosAdm = async () => {
             <td><button onclick=upgradeUser()>Editar</button></td>
         </tr>
         `
-    }).join('');
-    tableBody.innerHTML = usuario;
+    });
+
+    tableBody.innerHTML = usuario.join('');
 }
 
 usuariosAdm();
