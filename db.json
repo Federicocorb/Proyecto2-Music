@@ -23,6 +23,30 @@
       "password": "federico",
       "role": "client",
       "id": 3
+    },
+    {
+      "name": "asd",
+      "email": "asd",
+      "userName": "asd",
+      "password": "asd",
+      "role": "client",
+      "id": 4
+    },
+    {
+      "name": "asdafefef",
+      "email": "asdefefef",
+      "userName": "asdefef",
+      "password": "www",
+      "role": "client",
+      "id": 5
+    },
+    {
+      "name": "rafa",
+      "email": "rafa111x_ortega@hotmail.com",
+      "userName": "rafaortega",
+      "password": "111",
+      "role": "client",
+      "id": 6
     }
   ]
 }
