@@ -5,6 +5,12 @@ const registerUser = () => {
     const password = document.getElementById('inputPassword').value;
     const confirmPassword = document.getElementById('inputConfirmPassword').value;
 
+    if(name === '' || email === '' || userName === '' || password === '' || confirmPassword === ''){
+        alert('Todos los campos deben ser completados')
+        return
+    }
+
+
     if(password !== confirmPassword){
         alert('Las contraseñas no coinciden')
     }else{

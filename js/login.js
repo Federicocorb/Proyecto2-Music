@@ -9,6 +9,11 @@ const loginUser = async () => {
 
     const usuario = results.find(user => user.email === inputEmail && user.password === inputPassword);
 
+    if(inputEmail === '' || inputPassword === ''){
+        alert('Debe colocar su usuario y su contraseña!')
+        return
+    }
+
     if(usuario){
         localStorage.setItem('role', usuario.role);
         window.location.href = './admin.html'
