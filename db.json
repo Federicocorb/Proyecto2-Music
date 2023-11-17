@@ -2,11 +2,11 @@
   "songs": [
     {
       "id": 1,
-      "name": "Superstar",
-      "Autor": "El Zar",
-      "album": "Pura Casualidad",
+      "name": "asd",
+      "Autor": "asd",
+      "album": "asd",
       "duracion": "",
-      "category": "Rock",
+      "category": "asd",
       "featured": false,
       "image": "./assets/imagenZar.jpg"
     },

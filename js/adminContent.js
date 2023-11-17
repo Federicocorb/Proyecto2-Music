@@ -13,7 +13,7 @@ const getSongs = async () => {
              <td>${song.category}</td>
              <td>${song.featured}</td>
              <td><button onclick=deleteSong(${song.id})>Eliminar</button></td>
-             <td><button onclick=upgradeSong()>Editar</button></td>
+             <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" onclick=getId(${song.id}) data-bs-target="#exampleModal">Editar!</button></td>
          </tr>
          `
      });
@@ -23,6 +23,37 @@ const getSongs = async () => {
 
 getSongs();
 
+// EDITAR CANCIONES 
+
+
+const upgradeSong = () => {
+   const songId = localStorage.getItem('songId')
+    const editName = document.getElementById('editName').value;
+    const editAutor = document.getElementById('editAutor').value;
+    const editAlbum = document.getElementById('editAlbum').value;
+    const editCategory = document.getElementById('editCategory').value;
+
+    
+     fetch(`http://localhost:3000/songs/${songId}`,{
+         method: 'PATCH',
+          body: JSON.stringify({       
+            name : editName,
+            Autor : editAutor,
+            album : editAlbum,
+            category : editCategory
+          }),
+          headers: {
+             'Content-type': 'application/json; charset=UTF-8',
+         }
+     })
+} 
+
+const getId = (id) => {
+     localStorage.setItem('songId', id)
+ }
+
+
+// BORAR CANCION DE LA BASE DE DATOS 
 
 const deleteSong = (id) => {
     fetch(`http://localhost:3000/songs/${id}`,{
