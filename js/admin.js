@@ -5,7 +5,7 @@ const validationUser = () => {
     if(roleUser === 'admin'){
         alert('Bienvenido al panel de Adm');
     }else{
-        window.location.href = '../index.html'
+        window.location.href = '../pages/paguina_principal.html'
     }
 }
 

@@ -125,7 +125,7 @@
       "name": "federico corbalan",
       "email": "fede@gmail.com",
       "userName": "123456",
-      "password": "123456",
+      "password": "asd",
       "role": "admin",
       "id": 1
     },
@@ -136,14 +136,6 @@
       "password": "rafael",
       "role": "client",
       "id": 2
-    },
-    {
-      "name": "",
-      "email": "",
-      "userName": "",
-      "password": "",
-      "role": "client",
-      "id": 3
     }
   ]
 }

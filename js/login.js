@@ -16,7 +16,7 @@ const loginUser = async () => {
 
     if(usuario){
         localStorage.setItem('role', usuario.role);
-        window.location.href = './admin.html'
+        window.location.href = './adminContent.html'
     }else{
         alert('LA Cuenta es inexistente')
     }

@@ -1,3 +1,16 @@
+const validationUser = () => {
+    const roleUser = localStorage.getItem('role');
+
+    if(roleUser === 'admin'){
+        alert('Bienvenido al panel de Adm');
+    }else{
+        window.location.href = '../pages/paguina_principal.html'
+    }
+}
+
+validationUser();
+
+
 const getSongs = async () => {
     const songs = await fetch('http://localhost:3000/songs');
     const results = await songs.json()
