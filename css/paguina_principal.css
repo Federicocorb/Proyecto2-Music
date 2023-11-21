@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    background-image: url(/Proyecto2-Music/assets/header1.png);
+    background-image: url(/assets/header1.png);
     width: 100%;
     height: 400px;
     background-size: cover;
@@ -62,7 +62,7 @@
 
 .contenedor_card_padre{
     width: 100%;
-    max-width: 1600px;
+    /* max-width: 1600px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
