@@ -27,6 +27,6 @@ const registerUser = () => {
                 'Content-type': 'application/json; charset=UTF-8',
             }
         })
-        window.location.href = "../pages/paguina_principal.html"
+        window.location.href = "../index.html"
     }
 }

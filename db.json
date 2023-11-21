@@ -136,6 +136,30 @@
       "password": "rafael",
       "role": "client",
       "id": 2
+    },
+    {
+      "name": "fede",
+      "email": "fede",
+      "userName": "fede",
+      "password": "fede",
+      "role": "client",
+      "id": 3
+    },
+    {
+      "name": "fede",
+      "email": "fede",
+      "userName": "fede",
+      "password": "fede",
+      "role": "client",
+      "id": 4
+    },
+    {
+      "name": "asd",
+      "email": "asd",
+      "userName": "asd",
+      "password": "asd",
+      "role": "client",
+      "id": 5
     }
   ]
 }
